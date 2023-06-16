@@ -1,5 +1,13 @@
+h1 {
+    color: rgb(14, 2, 2);
+     border-color:black;  
+     text-align: center;
+     place-items: center;
+}
+
+
 h2 {
-    color: rgb(119, 2, 2);
+    color: rgb(196, 94, 170);
      border-color:black;  
      text-align: center;
      place-items: center;
@@ -7,7 +15,7 @@ h2 {
 
 
  p {
-    color: rgb(0, 0, 0);
+    color: rgb(48, 32, 196);
     border-color:black; 
     text-shadow: rgb(218, 218, 218) 1px 0 10px;
     text-align: center;
@@ -23,11 +31,30 @@ li {
     place-items: center;
 }
 
-.puppy{
-    background-color: cornflowerblue;
-    float: left;
-    width: 300px;
-    height: 300px;
+.header
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.puppy-list
+{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: rgb(32, 168, 66);
+    width: 500px;
+    height: 500px;
     border: 10px solid gray; 
-    display:block
+    align-items:center;
+    justify-content:center;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 2300px;
+    height: 1150px;
 }

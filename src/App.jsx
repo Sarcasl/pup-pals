@@ -1,15 +1,21 @@
 import { useState } from 'react'
 import {puppyList} from './data.js'
 
-<h1>Puppy Pals</h1>
+
 
 function App() {
   const [puppies, setPuppies] = useState(puppyList)
   const [featPupId, setFeatPupId] = useState(null)
   const featuredPup = puppies.find((pup)=> pup.id === featPupId)
   console.log(featuredPup)
+  
   return (
-    <div id="puppy">
+    <div>
+      <div className="header">
+    <h1>Puppy Pals</h1>
+    </div>
+    <div className="container">
+    <div className="puppy-list">
       <div>
         {
           puppies.map((puppy) => 
@@ -31,6 +37,8 @@ function App() {
           </div>
         )
         }
+      </div>
+      </div>
       </div>
   )
 }
